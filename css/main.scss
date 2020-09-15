@@ -41,6 +41,11 @@ body {
 
 }
 
+#big1 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
 .recipe {
 
     display: grid;
@@ -55,7 +60,17 @@ body {
         display: inline;
         margin: 0;
     }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
     
+}
+
+h2 {
+    display: inline;
 }
 
 header {
@@ -99,6 +114,11 @@ footer {
             }
 
         }
+    }
+
+    .footer__credit {
+        display: flex;
+        justify-content: center;
     }
 }
 
