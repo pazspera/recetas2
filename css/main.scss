@@ -1,0 +1,28 @@
+/*  
+    -   Make the grid for the home page layout
+    -   Put the name of the recipe on the img card on index.html
+    -   Design the footer to have a list with all the recipes available on the web 
+    -   Make the grid design for the recipe page. On both layouts use grid-template-areas to define
+        the location of header, main and footer. 
+
+    -   Have index.html have an static layout of 8 available recipes. Then have a random number generator 
+        asign a recipe from the list of all recipes to each fixed slot in index.html. 
+    -   The footer has a list of all available recipes using category lists. That way all content is 
+        available without having a search bar
+
+
+*/
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/*   Poner el nombre de la receta en cada article   */
