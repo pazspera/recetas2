@@ -13,9 +13,10 @@
 
 */
 
-$black: #25291C;
+$black: #0A0F0D;
 $white: #F7F7F7;
 
+$nav__title--font-size: 1.5rem;
 
 *, *::before, *::after {
     box-sizing: inherit;
@@ -57,12 +58,8 @@ body {
     
 }
 
-#article1 {
-    background-image: url(../img/big1.png);
-}
-
 header {
-    background-color: #25291C;
+    background-color: $black;
     height:50px;
     display: flex;
     justify-content: flex-start;
@@ -74,6 +71,34 @@ header {
         text-transform: uppercase;
         font-size: 1.5rem;
         font-weight: 700;
+    }
+}
+
+footer {
+    background-color: $black;
+    color: $white;
+
+    .footer__nav {
+        padding: 3em 0;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+
+        .nav__card {
+            
+            .nav__title {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: $nav__title--font-size;
+            }
+
+            .nav__link {
+                padding: 0;
+                list-style-type: none;
+                line-height: 2em;
+            }
+
+        }
     }
 }
 

@@ -55,12 +55,8 @@ body {
   margin: 0;
 }
 
-#article1 {
-  background-image: url(../img/big1.png);
-}
-
 header {
-  background-color: #25291C;
+  background-color: #0A0F0D;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,5 +75,33 @@ header .header__logo {
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+footer {
+  background-color: #0A0F0D;
+  color: #F7F7F7;
+}
+
+footer .footer__nav {
+  padding: 3em 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .footer__nav .nav__card .nav__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+footer .footer__nav .nav__card .nav__link {
+  padding: 0;
+  list-style-type: none;
+  line-height: 2em;
 }
 /*# sourceMappingURL=main.css.map */
