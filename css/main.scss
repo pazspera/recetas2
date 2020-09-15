@@ -13,6 +13,9 @@
 
 */
 
+$black: #25291C;
+
+
 *, *::before, *::after {
     box-sizing: inherit;
 }
@@ -48,6 +51,7 @@ body {
         background-color: white;
         padding: 0.3em;
         display: inline;
+        margin: 0;
     }
     
 }
@@ -55,3 +59,13 @@ body {
 #article1 {
     background-image: url(../img/big1.png);
 }
+
+header {
+    background-color: #25291C;
+    height:50px;
+
+    .header__logo {
+        margin: 0;
+    }
+}
+

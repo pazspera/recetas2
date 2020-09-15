@@ -52,9 +52,19 @@ body {
   background-color: white;
   padding: 0.3em;
   display: inline;
+  margin: 0;
 }
 
 #article1 {
   background-image: url(../img/big1.png);
+}
+
+header {
+  background-color: #25291C;
+  height: 50px;
+}
+
+header .header__logo {
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */
