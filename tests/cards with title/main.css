@@ -1,0 +1,9 @@
+.card{
+    position: relative;
+}
+
+.card__title {
+    position: absolute;
+    bottom: 1%;
+    left: 2%;
+}
