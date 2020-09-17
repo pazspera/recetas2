@@ -51,6 +51,7 @@ body {
     display: grid;
     grid-template-rows: 2fr, 0.5fr;
     grid-template-columns: 3%, 97%;
+    position: relative;
 
     &__title{
         font-weight: 700;
@@ -59,6 +60,12 @@ body {
         padding: 0.3em;
         display: inline;
         margin: 0;
+        /*  Pone el título sobre la img */
+        position: absolute;
+        bottom: 1em;
+        left: 1em;
+        /*  Hace que el titulo ocupe 2 líneas si es muy largo */
+        max-width: 80%;
     }
 
     &__img {

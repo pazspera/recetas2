@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*  
     -   Make the grid for the home page layout
     -   Put the name of the recipe on the img card on index.html
@@ -49,6 +50,7 @@ body {
       grid-template-rows: 2fr, 0.5fr;
   -ms-grid-columns: 3%, 97%;
       grid-template-columns: 3%, 97%;
+  position: relative;
 }
 
 .recipe__title {
@@ -58,6 +60,12 @@ body {
   padding: 0.3em;
   display: inline;
   margin: 0;
+  /*  Pone el título sobre la img */
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  /*  Hace que el titulo ocupe 2 líneas si es muy largo */
+  max-width: 80%;
 }
 
 .recipe__img {
