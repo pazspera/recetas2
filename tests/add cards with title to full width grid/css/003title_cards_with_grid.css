@@ -29,6 +29,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Raleway';
 }
 
 .content {
@@ -38,6 +39,29 @@ body {
         move the grid over the header using position absolute
     */
 }
+
+
+/*  TYPOGRAPHY  */
+        
+    h2 {
+        display: inline;
+    }
+    
+    header {
+        background-color: #0A0F0D;
+        height: 50px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }  
+
+/*  END TYPOGRAPHY  */
 
 /*  Header */
 
@@ -143,5 +167,64 @@ header {
 
 /*  END OF RECIPE   */
 
+/*  FOOTER  */
 
+    footer {
+        background-color: #0A0F0D;
+        color: #F7F7F7;
+    }
+    
+    footer .footer__nav {
+        padding: 3em 0;
+        margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+    }
+    
+    footer .footer__nav .nav__card .nav__title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    
+    footer .footer__nav .nav__card .nav__link {
+        padding: 0;
+        list-style-type: none;
+        line-height: 2em;
+        font-size: 1.125rem;
+    }
+    
+    footer .footer__credit {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    /*
+    @media (min-width: 1000px) {
+        footer .footer__nav {
+            padding: 3em 0;
+            margin: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: space-evenly;
+                -ms-flex-pack: space-evenly;
+                    justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .nav__card {
+            min-width: 40%;
+        }
+    }*/
+
+/*  END OF FOOTER */
 
