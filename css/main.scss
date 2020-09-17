@@ -1,4 +1,5 @@
-/*  
+/*  002 
+
     -   Make the grid for the home page layout
     -   Put the name of the recipe on the img card on index.html
     -   Design the footer to have a list with all the recipes available on the web 
@@ -9,7 +10,6 @@
         asign a recipe from the list of all recipes to each fixed slot in index.html. 
     -   The footer has a list of all available recipes using category lists. That way all content is 
         available without having a search bar
-
 
 */
 
@@ -48,16 +48,13 @@ body {
 
 .recipe {
 
-    display: grid;
-    grid-template-rows: 2fr, 0.5fr;
-    grid-template-columns: 3%, 97%;
     position: relative;
 
     &__title{
         font-weight: 700;
         text-transform: uppercase;
         background-color: white;
-        padding: 0.3em;
+        padding: 0.5em;
         display: inline;
         margin: 0;
         /*  Pone el título sobre la img */
@@ -93,6 +90,7 @@ header {
         text-transform: uppercase;
         font-size: 1.5rem;
         font-weight: 700;
+        padding-left: 2em;
     }
 }
 
