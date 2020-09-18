@@ -118,6 +118,7 @@ header {
         grid-column: span 2;
         grid-row: span 2;
     }
+    
 }
 
 /* END OF GRID */
@@ -173,9 +174,16 @@ h2 {
     footer {
         background-color: #0A0F0D;
         color: #F7F7F7;
+        height: 100vh;
+        /*
+            Using 100vh to make sure that the footer
+            covers the whole screen on scroll works. The problem is with .footer__credits. It's background color
+            disappears and it causes issues in
+            tablet and mobile
+        */
         position: sticky;
         bottom: 0;
-        z-index: -1;
+        z-index: -1;;
     }
     
     footer .footer__nav {
@@ -183,16 +191,23 @@ h2 {
         margin: auto;
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: space-evenly;
-            -ms-flex-pack: space-evenly;
-                justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+        grid-auto-rows: 20.3rem /* 325px */
+        grid-auto-flow: dense;
+        margin: 0 auto;
     }
-    
+
+    .nav__card {
+        max-width: 18.75rem /* 300px */;
+        margin: 0 auto;
+    }
+
     footer .footer__nav .nav__card .nav__title {
         text-transform: uppercase;
         font-weight: 700;
         font-size: 2rem;
+        margin: 0;
     }
     
     footer .footer__nav .nav__card .nav__link {
@@ -209,7 +224,6 @@ h2 {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        padding: 2em 0;
     }
 
     /*
