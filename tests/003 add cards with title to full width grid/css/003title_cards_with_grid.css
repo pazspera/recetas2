@@ -11,6 +11,7 @@
     VARIABLES
     $black: #0A0F0D;
     $white: #F7F7F7;
+    $yellow: #FFD400;
     $nav__title--font-size: 1.5rem;
 
 /*  General */
@@ -138,6 +139,9 @@ header {
             padding: 0.5em;
             display: inline;
             margin: 0;
+            position: absolute;
+            top: 1em;
+            left: 1em;
 
             /*  Intento 001
                 Usé position absolute pero 
