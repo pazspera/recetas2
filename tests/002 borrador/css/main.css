@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/*  002 
+
+    -   Make the grid for the home page layout
+    -   Put the name of the recipe on the img card on index.html
+    -   Design the footer to have a list with all the recipes available on the web 
+    -   Make the grid design for the recipe page. On both layouts use grid-template-areas to define
+        the location of header, main and footer. 
+
+    -   Have index.html have an static layout of 8 available recipes. Then have a random number generator 
+        asign a recipe from the list of all recipes to each fixed slot in index.html. 
+    -   The footer has a list of all available recipes using category lists. That way all content is 
+        available without having a search bar
+
+*/
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway';
+}
+
+/*   Poner el nombre de la receta en cada article   */
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(420px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  grid-auto-rows: 420px;
+  grid-auto-flow: dense;
+}
+
+#big1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.recipe {
+  position: relative;
+}
+
+.recipe__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: white;
+  padding: 0.5em;
+  display: inline;
+  margin: 0;
+  /*  Pone el título sobre la img */
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  /*  Hace que el titulo ocupe 2 líneas si es muy largo */
+  max-width: 80%;
+}
+
+.recipe__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h2 {
+  display: inline;
+}
+
+header {
+  background-color: #0A0F0D;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header__logo {
+  margin: 0;
+  color: #F7F7F7;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 2em;
+}
+
+footer {
+  background-color: #0A0F0D;
+  color: #F7F7F7;
+}
+
+footer .footer__nav {
+  padding: 3em 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .footer__nav .nav__card .nav__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+footer .footer__nav .nav__card .nav__link {
+  padding: 0;
+  list-style-type: none;
+  line-height: 2em;
+}
+
+footer .footer__credit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=main.css.map */
