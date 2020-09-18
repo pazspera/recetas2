@@ -158,12 +158,9 @@ header {
         object-fit: cover;    
 }
         
-    
-
-    h2 {
+h2 {
         display: inline;
     }   
-
 
 /*  END OF RECIPE   */
 
@@ -172,6 +169,9 @@ header {
     footer {
         background-color: #0A0F0D;
         color: #F7F7F7;
+        position: sticky;
+        bottom: 0;
+        z-index: -1;
     }
     
     footer .footer__nav {
@@ -205,6 +205,7 @@ header {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
+        padding: 2em 0;
     }
 
     /*
