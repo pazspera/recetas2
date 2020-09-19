@@ -36,8 +36,8 @@ body {
 .content {
     height: 100vh;
     position: relative;
-    /*  Position relative and setting the height allows me to 
-        move the grid over the header using position absolute
+    /*  Position relative and setting the height
+        allows me to move the grid over the header using position absolute
     */
 }
 
