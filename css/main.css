@@ -14,6 +14,8 @@
     $yellow: #FFD400;
     $nav__title--font-size: 1.5rem;
 
+    $
+
 /*  General */
 
 
@@ -187,7 +189,7 @@ h2 {
     }
     
     footer .footer__nav {
-        padding: 3em 0;
+        padding: 6em 3em;
         margin: auto;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -201,22 +203,28 @@ h2 {
     .nav__card {
         max-width: 18.75rem /* 300px */;
         margin: 0 auto;
+        line-height: 1.15;
     }
 
     footer .footer__nav .nav__card .nav__title {
         text-transform: uppercase;
         font-weight: 700;
         font-size: 2rem;
-        margin: 0;
+        margin: 2rem 0;
     }
     
     footer .footer__nav .nav__card .nav__link {
         padding: 0;
         list-style-type: none;
         line-height: 2em;
-        font-size: 1.125rem;
+        font-size: 1rem;
+    }
+
+    .nav__link li {
+        margin: .7rem 0;
     }
     
+
     footer .footer__credit {
         display: -webkit-box;
         display: -ms-flexbox;
