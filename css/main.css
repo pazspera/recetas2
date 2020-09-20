@@ -202,7 +202,7 @@ h2 {
 
     .nav__card {
         max-width: 18.75rem /* 300px */;
-        margin: 0 auto;
+        margin: 0 auto 3rem;
         line-height: 1.15;
     }
 
